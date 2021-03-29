@@ -13,7 +13,7 @@ type Article struct {
 	Content string `json:"Content"`
 }
 
-// Global variable that simulate DB (minimal DB)
+// Global variable that simulate stateless DB (minimal DB)
 var Articles []Article
 
 func homePage(w http.ResponseWriter, r *http.Request) {
